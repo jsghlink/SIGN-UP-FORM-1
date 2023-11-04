@@ -1,0 +1,6 @@
+* {
+    margin: 0px;
+    padding: 10px; /* 15px  by default */
+    box-sizing: border-box;
+    /* border: 2px solid purple; */
+}
