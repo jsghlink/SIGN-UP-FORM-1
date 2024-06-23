@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form Checkup</title>
+    <link rel="stylesheet" href="stylessupformcheck.css">
+    <!-- <script src="" defer></script> -->
+</head>
+<body>
+    <div class="container">
+        
+        <div class="section1">
+
+            <div class="section1a">
+                <!-- <div class="image-band"> -->
+                    <div class="logo-and-text">
+
+                        <img src="odin-lined.png" alt="The image should be here." class="odin-image"/><p class="odin-text"> ODIN </p>
+
+                    </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="section1b">
+
+            </div>
+
+            <div class="section1c">
+                
+                <footer>League of Assasins HQ from<br>
+                <a href="https://www.imdb.com/title/tt0372784/">Batman Begins</a>
+                </footer>
+
+            </div>
+
+        </div>
+
+        <div class="section2">
+
+            <div class="section2a">
+
+                <div class="intro-text">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                    Sign up <em>now</em> to get started.
+                    <br>
+                    <br>
+                    You <em>know</em> you want to.
+                </div>
+
+            </div>
+
+            <div class="section2b"> <!-- to use div or forms here? -->
+
+                <!-- <div class="formdiv"> -->
+
+                    <p class="letsdothis">Let's do this!</p>
+
+                    <div class="formpartwrap">
+
+                        <div class="formpartwrap1">
+                            <form action="/sign-up" method="post">
+
+                                <label for="firstname">FIRST NAME: </label>
+                                <input type="text" name="name" id="firstname" placeholder="Martin" size="25" required>
+
+                                <label for="lastname">LAST NAME: </label>
+                                <input type="text" name="name" id="lastname" placeholder="Crowe" size="25" required>
+
+                                <label for="emailid">EMAIL ID: </label>
+                                <input type="email" name="emailid" id="emailid" placeholder="martincrowe92@gmail.com" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" size="25" required>
+
+                            </form>
+                        </div>
+                    
+                        <div class="formpartwrap2">    
+                            <form action="/sign-up" method="post">
+
+                                <label for="contactnumber">CONTACT NUMBER: </label>
+                                <input type="numeric" name="contactnumber" id="contactnumber" placeholder= "8797242786" pattern="\d{10}" size="25" required>
+
+                                <label for="password">PASSWORD: </label>
+                                <input type="password" id="password" name="user-password"  minlength="8" maxlength="20" pattern="^.{8,20}$" size="25" required/>
+
+                                <label for="confirm-password">CONFIRM PASSWORD: </label>
+                                <input type="password" id="confirm-password" minlength="8" maxlength="20" pattern="^.{8,20}$" size="25" required/>
+
+                            </form>
+                        </div>
+
+                    </div>
+            </div>
+
+            <div class="section2c">
+
+                <div class="buttonandtext">
+
+                    <button class="button accountbutton" id="accountbuttonid" type="button">Create Account</button>
+                    <p class="box loginbox" id="loginboxid">
+                    Already have an account? <a href="/login">Log In</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

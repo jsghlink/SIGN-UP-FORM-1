@@ -1,0 +1,285 @@
+/* line height(= 2.50) added in Settings */
+/* introduction of fordiv in section 2b changed the pproportions of the resp. sections */
+/* things improved immediately after introducing the structure in section2b drawm in copy*/
+
+/* @font-face {
+    font-family: Fenix;
+    src: url(./assets/fonts/fenix/Fenix-Regular.ttf);
+  } */
+
+* {
+    margin: 0px;
+    padding: 10px; /* 15px  by default */
+    box-sizing: border-box;
+    border: 2px solid purple;
+}
+
+html {
+    padding: 0px;
+}
+
+body {
+    background: url("nasr-vfx-day001.jpg");
+    background-color: #596D48;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    /* background-blend-mode:multiply; */
+    border: 2px solid maroon;
+    padding: 0px;
+}
+
+.container {
+    display:flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    /* height: 100dvh; check browser support */
+    border: 2px solid orangered;
+    padding: 0px;
+}
+
+.section1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid skyblue;
+    padding: 0px;
+}
+
+.section1a {
+    /* display: flex; */
+    flex: 1.5;
+    /* height: 35%; */
+    /* padding: 0px; think on this */
+    /* position: relative; */
+    /* margin-bottom: 15px; */
+    border: 2px solid yellow;
+    position: relative;
+    padding: 0px;
+}
+
+.logo-and-text {
+    /* width: fit-content; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px; 
+    /* margin-bottom: 5%; */
+    /* bottom: 5%; */
+    /* justify-content: baseline; */
+    border: 2px solid red;
+    position:absolute;
+    bottom: 0%;
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.odin-image {
+    width:20%;
+    height:20%;
+}
+
+.odin-text {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight:normal;
+    /* text-shadow: ; */
+    /* margin: auto; */
+    /* margin-top: auto;
+    margin-bottom: auto; used align-items instead of margin top and bottom */
+}
+
+.section1b {
+    /* display: flex; */
+    flex: 1;
+    /* height: 30%; */
+    border: 2px solid blue;
+}
+
+.section1c {
+    /* display: flex; */
+    flex: 1.5;
+    /* height: 35%; */
+    border: 2px solid lawngreen;
+    /* position: relative; --*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    /* position: absolute; --*/
+    /* bottom: 0%; --*/
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+/* .image-band {
+    /* height: 40%; /
+    display: flex;
+    /* justify-content: center; /
+} */
+
+.section2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid #FF10F0;
+    padding: 0px;
+}
+
+.section2a {
+    flex: 1.5;
+    border: 2px solid teal;
+    padding: 0px;
+    position: relative;
+}
+
+.intro-text {
+    color: white;
+    padding: 0px;
+    position:absolute;
+    bottom: 20%;
+    font-size: 20px;
+    /* try using 18px */
+    font-weight: normal;
+}
+
+em {
+    padding: 0px;
+}
+
+.section2b {
+    flex: 1;
+    border: 2px solid rgb(185, 47, 47);
+    /* padding: 0px; */
+    padding: 0px;
+}
+
+.letsdothis {
+    /* font-size: 18px; */
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    padding: 0px;
+    padding-bottom: 5px;
+}
+
+/* .formdiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 0px;
+} */
+
+.formpartwrap {
+    display: flex;
+
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 0px;
+    gap: 10%;
+}
+
+.formpartwrap1 {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.formpartwrap2 {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+form {
+    padding: 0px;
+}
+
+/* input:is(
+    [type="email"],
+    [type="numeric"],
+    [type="password"],
+    [type="text"]
+  )
+  :not(:placeholder-shown):invalid,
+.error {
+  outline: 1px solid crimson !important;
+  border: 1px solid crimson !important;
+} */
+
+input[type="text"],[type="email"],
+[type="numeric"],
+[type="password"] {
+    line-height: 5px;
+    /* check line height  */
+    display: block;
+    /* padding: 0px; */
+    padding: 1.5px;
+}
+
+/* button {
+    appearance: none;
+    font-family: var(--default-font-stack);
+    border: 0;
+    background-color: firebrick;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition-duration: var(--default-transition-duration);
+  }
+  
+  button:hover {
+    background-color: maroon;
+    box-shadow: 0 0 0.5rem 1px salmon;
+  }
+  
+  button:active {
+    background-color: black;
+    box-shadow: 0 0 1rem 2px salmon;
+  } */
+
+.section2c {
+    flex: 1.5;
+    border: 2px solid rgb(218, 173, 62);
+}
+
+.button {
+    background-color: #6a686b;
+    color: white;
+    border-radius: 10px;
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+.loginbox {
+    color:white;
+    /* background-color: #6a686b; */
+    /* border-radius: 20%; */
+}
+
+a:link,
+a:visited {
+  color: #6a686b;
+}
+
+/* * {
+    /* border: none; / only purple borders were removed.
+} */
